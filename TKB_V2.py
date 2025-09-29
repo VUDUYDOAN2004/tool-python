@@ -28,7 +28,7 @@ def sort_timetable(input_file):
             table = t
             break
     if not table:
-        print("❌ Không tìm thấy bảng thời khóa biểu.")
+        print(" Không tìm thấy bảng thời khóa biểu.")
         return
 
     # Gom tất cả các hàng chứa môn (cột 3 khác rỗng)
@@ -47,7 +47,7 @@ def sort_timetable(input_file):
             pos += size
             continue
 
-        print(f"\n🔄 {day} - {session}")
+        print(f"\n {day} - {session}")
         print("   Gốc:", [r.cells[3].text.strip() for r in rows])
 
         # Map dữ liệu gốc
@@ -79,9 +79,9 @@ def sort_timetable(input_file):
         pos += size
 
     doc.save(input_file)
-    print("\n🎉 Hoàn thành, đã chỉnh sửa trực tiếp:", input_file)
+    print("\n Hoàn thành, đã chỉnh sửa trực tiếp:", input_file)
 
 
 if __name__ == "__main__":
-    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 3.docx")
+    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 4.docx")
 
