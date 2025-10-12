@@ -38,12 +38,12 @@ def sort_timetable(input_file):
     for (day, session, subjects) in correct_order:
         size = len(subjects)  # số tiết cần xử lý
         if size == 0:
-            print(f"\nℹ {day} - {session}: không có tiết → bỏ qua")
+            print(f"\n {day} - {session}: không có tiết → bỏ qua")
             continue
 
         rows = all_rows[pos:pos+size]
         if not rows:
-            print(f"\n⚠ {day} - {session}: không tìm thấy đủ hàng dữ liệu (cần {size})")
+            print(f"\n {day} - {session}: không tìm thấy đủ hàng dữ liệu (cần {size})")
             pos += size
             continue
 
@@ -83,5 +83,5 @@ def sort_timetable(input_file):
 
 
 if __name__ == "__main__":
-    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 4.docx")
+    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 7.docx")
 
