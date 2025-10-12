@@ -5,7 +5,6 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 def sort_timetable(input_file):
-    # Thứ tự chuẩn
     correct_order = [
         ("Thứ hai", "Sáng", ["Toán", "Công nghệ", "Tiếng Việt", "Tiếng Việt"]),
         ("Thứ hai", "Chiều", ["Toán", "Rèn Toán", "HĐTN"]),
