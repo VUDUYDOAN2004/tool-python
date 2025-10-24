@@ -82,5 +82,5 @@ def sort_timetable(input_file):
 
 
 if __name__ == "__main__":
-    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 7.docx")
+    sort_timetable("C:/Users/duydo/Downloads/ĐĂNG KÍ GIẢNG DẠY TUẦN 9.docx")
 
